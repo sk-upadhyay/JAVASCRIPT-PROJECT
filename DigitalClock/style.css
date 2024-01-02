@@ -1,0 +1,38 @@
+body{       
+     background: black;
+    color: aliceblue;
+    overflow: hidden;
+    color: aliceblue; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+.Icon{
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: 50px;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+    cursor: pointer;
+}
+
+
+.container{
+    background:linear-gradient(45deg,rgba(231, 6, 6, 0.419),rgba(7, 7, 226, 0.447));
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin-left: 500px;    
+    border-radius: 10px;
+    width: 550px;
+    letter-spacing: 5px;  
+    border: 2px dashed rgb(235, 63, 218); 
+}
+.digitalClock{
+    margin:0 35px;
+}
+.calendar{
+    text-align: center;
+    margin-bottom: 10px;
+}
