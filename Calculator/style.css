@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'MyCustomFont'; /* Desired font name */
+    src: url('Digital7Italic-BW658.ttf') format('truetype'); /* Primary format */
+  }
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/* Target all buttons within the calculator class for consistency */
+.calculator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjust for element's dimensions */
+    background-color: rgba(9, 8, 11, 0.592);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 70px black;
+  }
+h3{
+    margin-top: 90px;
+    display: inline-block;
+    background-color: #c61a1a96;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: rgb(9, 8, 8);
+}
+
+#display {
+    position: relative;
+    height: 50px; /* increase height as desired */
+    width: 200px; /* increase width as desired */
+    background: rgb(165, 153, 153);
+    text-transform: capitalize;
+    font-family: 'MyCustomFont',sans-serif;
+    font-size: 40px;
+}  
+.calculator input[type="button"] {
+    /* Font family and size */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+  
+    /* Padding for button size and spacing */
+    padding: 12px 25px;
+  
+    /* Background color and border */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+  
+    /* Cursor for interactivity */
+    cursor: pointer;
+  
+    /* Consistent width */
+    width: 40px; /* Adjust as needed */
+  
+    /* Hover effect */
+    &:hover {
+      background-color: #3e8e41; /* Darker green on hover */
+    }
+  }
+  
+  /* Optional: Style the "C" button differently */
+.calculator input[type="button"][value="C"] {
+    background-color: #f44336; /* Red background */
+}
