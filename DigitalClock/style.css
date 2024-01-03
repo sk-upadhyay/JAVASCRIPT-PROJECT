@@ -1,9 +1,13 @@
+@font-face {
+    font-family: 'MyCustomFont'; /* Desired font name */
+    src: url('Digital7Italic-BW658.ttf') format('truetype'); /* Primary format */
+  }
 body{       
      background: black;
     color: aliceblue;
     overflow: hidden;
     color: aliceblue; 
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'MyCustomFont',sans-serif;
 
 }
 .Icon{
