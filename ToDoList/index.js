@@ -8,10 +8,11 @@ button.addEventListener('click',() =>{
         let list = document.createElement('li');
         list.appendChild(document.createTextNode(container.value));
         item.appendChild(list);
-        container.value="";
+        container.value=""
 
         list.onclick = function(){
-            this.parentNode.remove;
+            this.parentNode.removeChild(this);
         }
     }
 });
+
