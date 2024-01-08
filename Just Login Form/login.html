@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Allotment</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <div class="conatiner">
+        <div class ="Navbar">
+            <a href="https://kiit.ac.in/"><img src="logo.png"></a>
+            <H1>KIIT UNIVERSITY </H1>
+            <button><a href="contact.html">Contact Us</a></button>
+        </div>
+        <form action="#" method="post">
+            <p>Hostel Allotment form</p>
+            <label for="username">Name</label>
+            <input type="text" name="User" id="useranme" placeholder="Name" required>
+            <label for="email">Email </label>
+            <input type="email" name="mail" id="email" placeholder="xyz@gmail.com" required >
+            <label for="mobilenumber"> telephone</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123-456-7890" required>
+            <div class = "gen">
+                <input type="radio" name = "gender" class="gender" value="male" required>Male<br> 
+                <input type="radio" name = "gender" class="gender" value= "female" required>Female<br>
+            </div>
+            <select name="Boys" id  = "boysoptions"class="option-boys">
+                <option value="KP7AB">KP7AB</option>
+                <option value="KP7C"> KP7C</option>
+                <option value="KP7D"> KP7D</option>
+                <option value="KP7E"> KP7E</option>
+            </select>
+            <select name="Girls" id  = "girlsoptions" class="option-girls">
+                <option value="QC1">QC1</option>
+                <option value="QC2">QC2</option>
+                <option value="QC3">QC3</option>
+                <option value="QC4">QC4</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
