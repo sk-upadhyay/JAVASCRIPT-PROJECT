@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  @keyframes animate{
+    0%{
+      background-image:url(Background/bg1.jpg);
+    }
+    20%{
+      background-image:url(Background/bg2.jpg);
+    }
+    40%{
+      background-image:url(Background/bg3.jpg);
+    }
+    60%{
+      background-image:url(Background/bg4.jpg);
+    }
+    80%{
+      background-image:url(Background/bg5.jpg);
+    }
+    100%{
+      background-image:url(KIIT-Photo1.jpeg);
+    }
+  
+  }
+  .contact-container {
+    background-image:url(KIIT-Photo1.jpeg);
+    background-size:cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+    animation: animate 30s ease-in-out infinite alternate-reverse forwards;
+    animation-play-state: running;
+  }
+  
+  .Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: auto;
+    font-size: 15px;
+    height: auto;
+    background: #dbd6d624;
+  
+  
+  }
+  .Navbar h1{
+    margin-top: 2px;
+    user-select: none;
+    color: #17d059;
+  }
+  .Navbar img{
+    height: 40px;
+    width: auto;
+  }
+  .Navbar button{
+    padding: 10px;
+    border: none;
+    background-color: #17d059;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .Navbar a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 10px;
+  }
+  .Navbar button:hover{
+    background-color: #1635e5;
+    transition: 1s;
+  }
+  
+  .right {
+    position: absolute;
+    width:300px;
+    left: calc(90% - 400px / 2);
+    height: auto;
+    top: calc(40% - 380px / 2);
+    background: #ffffff;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(73, 73, 73, 0.655);
+    
+  }
+  
+  .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 80px;
+    align-items: center;
+    color: #1635e5;
+  }
+  
+  .logo {
+    width: auto;
+    height: 50px;
+    margin-top:-20px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 10px;
+    color: #0b0b0b;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid #6c6c6c;
+    width: 180px;
+    height: 45px;
+    margin: 15px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+input[type="radio"]{
+    margin: 5px 5px 5px 5px;
+    
+}
+span{
+    font-size: 18px;
+}
+.boys{
+    display: none;
+}
+.girls{
+    display: none;
+    
+}
+.select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+select{
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(105, 105, 105, 0.259);
+}
+
+  
+  ::placeholder {
+    color: #3d3e414b;
+    font-size: 18px;
+  }
+  
+  .icon {
+    position: absolute;
+    padding: 24px 32px;
+    height: 75px;
+    width: 90px;
+  }
+  
+  
+  .right button {
+    width: 260px;
+    height: 45px;
+    left: 1273px;
+    top: 780px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    background: rgba(54, 19, 193, 0.89);
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
+  
+
+  
+  

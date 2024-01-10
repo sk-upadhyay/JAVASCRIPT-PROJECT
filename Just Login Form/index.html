@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="conatiner">
-        <div class ="Navbar">
-            <a href="https://kiit.ac.in/">
-            <img src="logo.png" ></a>
-            <H1>KIIT UNIVERSITY </H1>
-            <button><a href="contact.html">Contact Us</a></button>
+
+    <div class="Navbar">
+        <a href="https://kiit.ac.in/"><img src="logo.png" /></a>
+        <h1>KIIT UNIVERSITY</h1>
+        <button><a href="contact.html">Contact Us</a></button>
+      </div>
+    <div class="contact-container">
+        <form action="login.html">
+        <div class="right">
+            <h1 class="title">Log In Form</h1>
+            <img class="logo" src="logo.png" alt="">
+            <div class="form-container">
+                <div class="username">
+                    <img class="icon email-icon" src="icons/email.svg" alt="">
+                    <input type="text" class="user-input" placeholder="Admisson - Id" required>
+                </div>
+                <div class="password">
+                    <img class="icon password-icon" src="icons/password lock.svg" alt="">
+                    <input type="password" class="pass-input" placeholder="Password" required>
+                </div>
+                
+                <div class="keepme">
+                    <input type="checkbox" checked="true">
+                    Keep Me Logged In
+                </div>
+                <button type="submit">Submit !</button>
+                <a href="#" class="link">Forgot Password</a>
+            </div>
         </div>
-        <form action="login.html" method="get">
-            <label for="userid">User Id</label>
-            <input type="text" name="User" id="userid" placeholder="kIIT-0001" required>
-            <label for="pass">Password</label>
-            <input type="password" name="" id="pass" placeholder="Your Contact" required>
-            <input type="submit" value="Submit">
-        </form>
+    </form>
     </div>
-    
 </body>
+
 </html>

@@ -1,19 +1,19 @@
-const gender = document.querySelectorAll('input[name="gender"]');
-const boysoptions = document.querySelector('.option-boys');
-const girlsoptions = document.querySelector('.option-girls');
+const genderRadios = document.querySelectorAll('input[name="gender"]');
+const boysOptions = document.querySelector('.boys');
+const girlsOptions = document.querySelector('.girls');
 
 document.addEventListener("DOMContentLoaded", function () {
-  gender.forEach(function (radio) {
+  genderRadios.forEach(function (radio) {
     radio.addEventListener('change', function () {
-      if (radio.checked && radio.value.toLowerCase() === 'male') {
-        boysoptions.style.display = 'block';
-        girlsoptions.style.display = 'none';
-      } else if (radio.checked && radio.value.toLowerCase() === 'female') {
-        boysoptions.style.display = 'none';
-        girlsoptions.style.display = 'block';
+      if (radio.checked && radio.value === 'Male') {
+        boysOptions.style.display = 'block';
+        girlsOptions.style.display = 'none';
+      } else if (radio.checked && radio.value === 'Female') {
+        boysOptions.style.display = 'none';
+        girlsOptions.style.display = 'block';
       } else {
-        boysoptions.style.display = 'none';
-        girlsoptions.style.display = 'none';
+        boysOptions.style.display = 'none';
+        girlsOptions.style.display = 'none';
       }
     });
   });
